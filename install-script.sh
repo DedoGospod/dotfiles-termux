@@ -17,7 +17,7 @@ pkg_packages=(
 )
 
 echo "Installing required packages: ${pkg_packages[*]}..."
-# The -noconfirm flag is deprecated. Use -y to automatically answer yes.
+# The -y flag automatically answers yes to prompts.
 pkg install -y --needed "${pkg_packages[@]}"
 
 # ---
@@ -54,9 +54,6 @@ if [ -d "$DOTFILES_DIR" ]; then
 else
   # If the dotfiles directory doesn't exist, print a warning and skip the whole section.
   echo "Warning: Dotfiles directory '$DOTFILES_DIR' not found. Skipping stow setup."
-fi
-
-echo "Script finished successfully!"
 fi
 
 # Installation complete
