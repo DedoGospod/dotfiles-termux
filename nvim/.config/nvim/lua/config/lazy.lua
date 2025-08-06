@@ -7,6 +7,8 @@ require("lazy").setup({
     checker = { enabled = true },
 })
 
+require("config.keymaps") -- keymaps
+
 -- Neotree configuration
 require('neo-tree').setup({
     window = {
