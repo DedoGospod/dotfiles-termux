@@ -28,7 +28,7 @@ DOTFILES_DIR="$HOME/dotfiles-termux"
 # List of dotfiles to symlink using stow.
 stow_packages=(
   nvim
-  zsh
+  zshrc
 )
 
 echo "Attempting to set up dotfiles..."
