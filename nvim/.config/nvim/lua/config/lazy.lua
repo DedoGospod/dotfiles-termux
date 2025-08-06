@@ -7,10 +7,6 @@ require("lazy").setup({
     checker = { enabled = true },
 })
 
--- Require configs
-require("config.keymaps")     -- Keymaps
-require("config.lsp")         -- Lsp config
-
 -- Neotree configuration
 require('neo-tree').setup({
     window = {
