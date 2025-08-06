@@ -8,6 +8,7 @@ pkg update && pkg upgrade -y
 
 # List of packages to install.
 pkg_packages=(
+  stow
   neovim
   python
   wol
