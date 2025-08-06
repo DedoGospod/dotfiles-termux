@@ -12,6 +12,8 @@ pkg_packages=(
   neovim
   python
   wol
+  zoxide
+  speedtest-go
 )
 
 echo "Installing required packages: ${pkg_packages[*]}..."
