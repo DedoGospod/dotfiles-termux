@@ -20,7 +20,7 @@ pkg_packages=(
 
 echo "Installing required packages: ${pkg_packages[*]}..."
 # The -y flag automatically answers yes to prompts.
-pkg install -y --needed "${pkg_packages[@]}"
+pkg install -y "${pkg_packages[@]}"
 
 # ---
 # Dotfiles Setup
