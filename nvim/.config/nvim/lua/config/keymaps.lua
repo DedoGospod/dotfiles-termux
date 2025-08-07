@@ -49,6 +49,11 @@ vim.api.nvim_set_keymap('n', '<C-e>', '<End>', { silent = true, noremap = true }
 -- Zoxide
 vim.cmd [[cnoreabbrev <expr> z ((getcmdtype() == ':' && getcmdline() == 'z') ? ' Z' : 'z')]]
 
+-- Harpoon
+local harpoon = require("harpoon")
+vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
+vim.keymap.set("n", "<Leader>ls", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+
 vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
