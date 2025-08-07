@@ -13,7 +13,7 @@ export EDITOR="nv"
 export VISUAL="nv"
 
 # Setup zoxide and starship
-eval "$(zoxide init bash)" 
+eval "$(zoxide init zsh)" 
 eval "$(starship init zsh)" 
 
 # Initialize ZSH completion system
