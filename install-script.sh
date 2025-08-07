@@ -32,6 +32,7 @@ DOTFILES_DIR="$HOME/dotfiles-termux"
 stow_packages=(
   nvim
   zshrc
+  starship
 )
 
 echo "Attempting to set up dotfiles..."
