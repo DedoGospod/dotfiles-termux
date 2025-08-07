@@ -15,6 +15,7 @@ pkg_packages=(
   zoxide
   speedtest-go
   zsh
+  starship
 )
 
 echo "Installing required packages: ${pkg_packages[*]}..."
