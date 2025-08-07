@@ -14,6 +14,7 @@ pkg_packages=(
   wol
   zoxide
   speedtest-go
+  zsh
 )
 
 echo "Installing required packages: ${pkg_packages[*]}..."
@@ -55,6 +56,9 @@ else
   # If the dotfiles directory doesn't exist, print a warning and skip the whole section.
   echo "Warning: Dotfiles directory '$DOTFILES_DIR' not found. Skipping stow setup."
 fi
+
+# Change shell to zsh
+chsh -s zsh
 
 # Installation complete
 echo "Installation complete!"
