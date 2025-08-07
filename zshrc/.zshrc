@@ -12,5 +12,10 @@ alias wakepc='wol f0:2f:74:af:89:b7'
 export EDITOR="nv"
 export VISUAL="nv"
 
-# Setup zoxide
+# Setup zoxide and starship
 eval "$(zoxide init bash)" 
+eval "$(starship init zsh)" 
+
+# Initialize ZSH completion system
+autoload -Uz compinit 
+compinit -d "${ZSH_COMPDUMP}"  # Explicitly use our custom XDG-compliant path
