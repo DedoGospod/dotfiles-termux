@@ -3,6 +3,9 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
+# Remove welcome message 
+touch .hushlogin
+
 # Update the system's package list and upgrade all installed packages.
 pkg update && pkg upgrade -y
 
