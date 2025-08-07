@@ -6,6 +6,12 @@ set -e
 # Remove welcome message 
 touch .hushlogin
 
+# Setup storage
+termux-setup-storage
+
+# Setup mirrors
+termux-change-repo
+
 # Update the system's package list and upgrade all installed packages.
 pkg update && pkg upgrade -y
 
