@@ -18,4 +18,4 @@ eval "$(starship init zsh)"
 
 # Initialize ZSH completion system
 autoload -Uz compinit 
-compinit -d "${ZSH_COMPDUMP}"  # Explicitly use our custom XDG-compliant path
+compinit -d "${ZSH_COMPDUMP}"  # Explicitly use custom XDG-compliant path
