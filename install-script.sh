@@ -6,6 +6,9 @@ set -e
 # Remove welcome message 
 touch .hushlogin
 
+# Create zsh history file
+touch .zsh_history 
+
 # Setup storage
 termux-setup-storage
 
