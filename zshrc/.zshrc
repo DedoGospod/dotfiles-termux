@@ -11,6 +11,7 @@ autoload -Uz compinit
 compinit -d "${ZSH_COMPDUMP}"  # Explicitly use custom XDG-compliant path
 
 # History settings configured to be XDG-compliant
+HISTFILE=.zsh_history
 HISTSIZE=10000                                   # Number of commands kept in memory
 SAVEHIST=5000                                    # Number of commands saved to HISTFILE
 setopt inc_append_history                        # Save commands to history immediately
