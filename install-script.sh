@@ -74,5 +74,12 @@ fi
 # Change shell to zsh
 chsh -s zsh
 
+# install zsh plugins
+mkdir -p ~/.zsh/plugins
+cd ~/.zsh/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+
 # Installation complete
 echo "Installation complete!"
