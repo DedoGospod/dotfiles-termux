@@ -41,3 +41,7 @@ zl() { if [ -z "$@" ]; then ls; else z "$@" && ls; fi; } # Automatically do an l
 
 # Configs
 alias zshrc='nvim ~/.zshrc'                            # Edit zsh config
+
+# Plugins
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
