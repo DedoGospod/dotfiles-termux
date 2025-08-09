@@ -4,10 +4,10 @@
 set -e
 
 # Remove welcome message 
-touch .hushlogin
+touch ~/.hushlogin
 
 # Create zsh history file
-touch .zsh_history 
+touch ~/.zshrc
 
 # Setup storage
 termux-setup-storage
