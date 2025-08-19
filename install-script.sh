@@ -28,6 +28,8 @@ pkg_packages=(
   speedtest-go
   zsh
   starship
+  ripgrep
+  fd
 )
 
 echo "Installing required packages: ${pkg_packages[*]}..."
