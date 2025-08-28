@@ -9,6 +9,9 @@ touch ~/.hushlogin
 # Create zsh history file
 touch ~/.zshrc
 
+# Create yazi config file
+touch ~/.config/yazi/yazi.toml
+
 # Setup storage
 termux-setup-storage
 
