@@ -30,6 +30,7 @@ pkg_packages=(
   starship
   ripgrep
   fd
+  yazi
 )
 
 echo "Installing required packages: ${pkg_packages[*]}..."
