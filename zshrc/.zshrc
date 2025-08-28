@@ -38,6 +38,7 @@ alias du='du -h'
 alias df='df -h'
 s() { if [ -z "$@" ]; then interactivefzf; else z "$@" && interactivefzf; fi; }    # Jumps to directory and then opens interactive fzf tool
 zl() { if [ -z "$@" ]; then ls; else z "$@" && ls; fi; } # Automatically do an ls after each zl command
+alias y='yazi' 
 
 # Configs
 alias zshrc='nvim ~/.zshrc'                            # Edit zsh config
