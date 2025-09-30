@@ -28,7 +28,7 @@ zshaddhistory() {
 alias cls='clear'
 alias speedtest='speedtest-go'
 alias nv='nvim'
-alias wakepc='wol f0:2f:74:af:89:b7'
+alias wakepc='ssh root@192.168.1.30 etherwake -i br-lan f0:2f:74:af:89:b7'
 alias ls='ls -1 --color=always --group-directories-first'  # Colorized ls output
 alias lsh='ls -A'           # Show all files including hidden
 alias h='history 0 | grep'  # Search history for a specific terminal command
