@@ -44,6 +44,7 @@ stow_packages=(
   nvim
   zshrc
   starship
+  scripts
 )
 
 # Set up dotfiles
