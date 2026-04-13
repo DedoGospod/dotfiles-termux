@@ -8,9 +8,6 @@ OPENWRT_IP="192.168.1.30"
 MAX_BOOT_WAIT_SECONDS=120
 
 # Hardened SSH Options:
-# - BatchMode: prevents interactive prompts
-# - ConnectTimeout: keeps scripts from hanging on dead IPs
-# - StrictHostKeyChecking: 'accept-new' is secure but automation-friendly
 SSH_OPTS="-o BatchMode=yes -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new"
 
 # Dependency Validation
@@ -22,7 +19,7 @@ for cmd in "${REQUIRED_CMDS[@]}"; do
     fi
 done
 
-# Pre-flight: Check if the target is already awake
+# Check if the target is already awake
 if nc -z -w 1 "$TARGET_IP" 22 2>/dev/null; then
     printf "Target machine %s is already awake...\n" "$TARGET_IP"
 else
@@ -43,7 +40,7 @@ else
     done
     printf "\n"
 
-    if [ "$RETRY_COUNT" -eq "$MAX_BOOT_WAIT_SECONDS" ]; then
+    if [[ "$RETRY_COUNT" -eq "$MAX_BOOT_WAIT_SECONDS" ]]; then
         printf "Error: Timeout waiting for %s port 22.\n" "$TARGET_IP" >&2
         exit 1
     fi
